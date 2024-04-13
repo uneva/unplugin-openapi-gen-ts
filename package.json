@@ -1,7 +1,7 @@
 {
     "name": "unplugin-openapi-gen-ts",
     "type": "module",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "OpenAPI rules generated typescript code for unplugin",
     "author": "MaggotCode <udp.pkg.loss@gmail.com> (https://github.com/maggot-code)",
     "homepage": "https://github.com/uneva/unplugin-openapi-gen-ts",
@@ -54,8 +54,10 @@
     "files": [
         "dist"
     ],
-    "workspaces":{
-        "packages": ["playground/*"]
+    "workspaces": {
+        "packages": [
+            "playground/*"
+        ]
     },
     "sideEffects": false,
     "scripts": {
