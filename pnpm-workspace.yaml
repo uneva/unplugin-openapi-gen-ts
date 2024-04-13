@@ -1,0 +1,3 @@
+packages:
+  # all playground in direct subdirs of playground/
+  - "playground/*"
