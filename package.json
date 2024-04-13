@@ -10,7 +10,8 @@
         "openapi",
         "unplugin",
         "typescript",
-        "codegen"
+        "codegen",
+        "vite-plugin"
     ],
     "main": "./dist/index.cjs",
     "module": "./dist/index.js",
@@ -28,15 +29,33 @@
             "require": "./dist/index.cjs",
             "default": "./dist/index.cjs"
         },
+        "./vite": {
+            "import": "./dist/vite.js",
+            "require": "./dist/vite.cjs",
+            "default": "./dist/vite.cjs"
+        },
+        "./config": {
+            "import": "./dist/config.js",
+            "require": "./dist/config.cjs",
+            "default": "./dist/config.cjs"
+        },
         "./utils": {
             "import": "./dist/utils/index.js",
             "require": "./dist/utils/index.cjs",
             "default": "./dist/utils/index.cjs"
+        },
+        "./types": {
+            "import": "./dist/types.js",
+            "require": "./dist/types.cjs",
+            "default": "./dist/types.cjs"
         }
     },
     "files": [
         "dist"
     ],
+    "workspaces":{
+        "packages": ["playground/*"]
+    },
     "sideEffects": false,
     "scripts": {
         "esno": "esno",
@@ -51,6 +70,9 @@
     },
     "dependencies": {
         "@kubb/core": "^2.12.5",
+        "@kubb/swagger": "^2.12.5",
+        "@kubb/swagger-tanstack-query": "^2.12.5",
+        "@kubb/swagger-ts": "^2.12.5",
         "fast-glob": "^3.3.2",
         "tinyrainbow": "^1.1.1",
         "unplugin": "^1.10.1"
@@ -63,6 +85,7 @@
         "esno": "^4.7.0",
         "tsup": "^8.0.2",
         "typescript": "^5.4.5",
+        "vite": "^5.2.8",
         "vitest": "^1.5.0"
     }
 }
