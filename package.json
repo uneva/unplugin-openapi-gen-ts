@@ -7,6 +7,7 @@
     "homepage": "https://github.com/uneva/unplugin-openapi-gen-ts",
     "license": "MIT",
     "keywords": [
+        "@kubb/core",
         "openapi",
         "unplugin",
         "typescript",
