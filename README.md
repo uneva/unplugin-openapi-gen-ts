@@ -1,0 +1,1 @@
+# unplugin-openapi-gen-ts
