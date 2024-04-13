@@ -1,0 +1,67 @@
+{
+    "name": "unplugin-openapi-gen-ts",
+    "type": "module",
+    "version": "1.0.0",
+    "description": "OpenAPI rules generated typescript code for unplugin",
+    "author": "MaggotCode <udp.pkg.loss@gmail.com> (https://github.com/maggot-code)",
+    "homepage": "https://github.com/uneva/unplugin-openapi-gen-ts",
+    "license": "MIT",
+    "keywords": [
+        "openapi",
+        "unplugin",
+        "typescript",
+        "codegen"
+    ],
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "typesVersions": {
+        "*": {
+            "*": [
+                "./dist/*"
+            ]
+        }
+    },
+    "exports": {
+        ".": {
+            "import": "./dist/index.js",
+            "require": "./dist/index.cjs",
+            "default": "./dist/index.cjs"
+        },
+        "./utils": {
+            "import": "./dist/utils/index.js",
+            "require": "./dist/utils/index.cjs",
+            "default": "./dist/utils/index.cjs"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "sideEffects": false,
+    "scripts": {
+        "esno": "esno",
+        "build": "tsup",
+        "dev": "tsup -d --watch",
+        "lint": "eslint .",
+        "lint:fix": "pnpm run lint --fix",
+        "release": "bumpp && pnpm publish",
+        "test": "vitest",
+        "test:ui": "vitest --ui",
+        "typecheck": "tsc --noEmit"
+    },
+    "dependencies": {
+        "fast-glob": "^3.3.2",
+        "tinyrainbow": "^1.1.1",
+        "unplugin": "^1.10.1"
+    },
+    "devDependencies": {
+        "@types/node": "^20.12.7",
+        "@uneva/eslint": "^1.0.10",
+        "bumpp": "^9.4.0",
+        "eslint": "8.57.0",
+        "esno": "^4.7.0",
+        "tsup": "^8.0.2",
+        "typescript": "^5.4.5",
+        "vitest": "^1.5.0"
+    }
+}
