@@ -1,6 +1,6 @@
 import type { ApiResponse } from "./ApiResponse";
 
- export type UploadFilePathParams = {
+export type UploadFilePathParams = {
     /**
      * @description ID of pet to update
      * @type integer int64
@@ -8,7 +8,7 @@ import type { ApiResponse } from "./ApiResponse";
     petId: number;
 };
 
- export type UploadFileQueryParams = {
+export type UploadFileQueryParams = {
     /**
      * @description Additional Metadata
      * @type string | undefined
@@ -16,19 +16,19 @@ import type { ApiResponse } from "./ApiResponse";
     additionalMetadata?: string;
 };
 
- /**
+/**
  * @description successful operation
 */
 export type UploadFile200 = ApiResponse;
 
- export type UploadFileMutationRequest = string;
+export type UploadFileMutationRequest = string;
 
- /**
+/**
  * @description successful operation
 */
 export type UploadFileMutationResponse = ApiResponse;
 
- export type UploadFileMutation = {
+export type UploadFileMutation = {
     Response: UploadFileMutationResponse;
     Request: UploadFileMutationRequest;
     PathParams: UploadFilePathParams;

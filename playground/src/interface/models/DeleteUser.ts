@@ -6,19 +6,19 @@ export type DeleteUserPathParams = {
     username: string;
 };
 
- /**
+/**
  * @description Invalid username supplied
 */
 export type DeleteUser400 = any;
 
- /**
+/**
  * @description User not found
 */
 export type DeleteUser404 = any;
 
- export type DeleteUserMutationResponse = any;
+export type DeleteUserMutationResponse = any;
 
- export type DeleteUserMutation = {
+export type DeleteUserMutation = {
     Response: DeleteUserMutationResponse;
     PathParams: DeleteUserPathParams;
     Errors: DeleteUser400 | DeleteUser404;

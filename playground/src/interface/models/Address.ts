@@ -1,8 +1,8 @@
 export const addressIdentifier = {
-    "NW": "NW",
-    "NE": "NE",
-    "SW": "SW",
-    "SE": "SE"
+    NW: "NW",
+    NE: "NE",
+    SW: "SW",
+    SE: "SE",
 } as const;
 export type AddressIdentifier = (typeof addressIdentifier)[keyof typeof addressIdentifier];
 export type Address = {
@@ -25,6 +25,6 @@ export type Address = {
     identifier?: [
         number,
         string,
-        AddressIdentifier
+        AddressIdentifier,
     ];
 };

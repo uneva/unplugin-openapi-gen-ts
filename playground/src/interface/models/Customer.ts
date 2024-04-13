@@ -1,6 +1,6 @@
-import { Address } from "./Address";
+import type { Address } from "./Address";
 
- export type Customer = {
+export type Customer = {
     /**
      * @type integer | undefined int64
     */

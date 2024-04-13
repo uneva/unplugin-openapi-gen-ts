@@ -6,7 +6,7 @@ export type UpdatePetWithFormPathParams = {
     petId: number;
 };
 
- export type UpdatePetWithFormQueryParams = {
+export type UpdatePetWithFormQueryParams = {
     /**
      * @description Name of pet that needs to be updated
      * @type string | undefined
@@ -19,14 +19,14 @@ export type UpdatePetWithFormPathParams = {
     status?: string;
 };
 
- /**
+/**
  * @description Invalid input
 */
 export type UpdatePetWithForm405 = any;
 
- export type UpdatePetWithFormMutationResponse = any;
+export type UpdatePetWithFormMutationResponse = any;
 
- export type UpdatePetWithFormMutation = {
+export type UpdatePetWithFormMutation = {
     Response: UpdatePetWithFormMutationResponse;
     PathParams: UpdatePetWithFormPathParams;
     QueryParams: UpdatePetWithFormQueryParams;
