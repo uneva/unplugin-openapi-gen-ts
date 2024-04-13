@@ -50,6 +50,7 @@
         "typecheck": "tsc --noEmit"
     },
     "dependencies": {
+        "@kubb/core": "^2.12.5",
         "fast-glob": "^3.3.2",
         "tinyrainbow": "^1.1.1",
         "unplugin": "^1.10.1"
@@ -58,7 +59,7 @@
         "@types/node": "^20.12.7",
         "@uneva/eslint": "^1.0.11",
         "bumpp": "^9.4.0",
-        "eslint": "9.0.0",
+        "eslint": "8.57.0",
         "esno": "^4.7.0",
         "tsup": "^8.0.2",
         "typescript": "^5.4.5",
