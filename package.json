@@ -72,10 +72,10 @@
         "typecheck": "tsc --noEmit"
     },
     "dependencies": {
-        "@kubb/core": "^2.16.1",
-        "@kubb/swagger": "^2.16.1",
-        "@kubb/swagger-tanstack-query": "^2.16.1",
-        "@kubb/swagger-ts": "^2.16.1",
+        "@kubb/core": "^2.16.3",
+        "@kubb/swagger": "^2.16.3",
+        "@kubb/swagger-tanstack-query": "^2.16.3",
+        "@kubb/swagger-ts": "^2.16.3",
         "fast-glob": "^3.3.2",
         "tinyrainbow": "^1.1.1",
         "unplugin": "^1.10.1"
@@ -89,6 +89,6 @@
         "tsup": "^8.0.2",
         "typescript": "^5.4.5",
         "vite": "^5.2.10",
-        "vitest": "^1.5.2"
+        "vitest": "^1.5.3"
     }
 }
