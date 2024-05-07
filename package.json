@@ -72,16 +72,16 @@
         "typecheck": "tsc --noEmit"
     },
     "dependencies": {
-        "@kubb/core": "^2.16.3",
-        "@kubb/swagger": "^2.16.3",
-        "@kubb/swagger-tanstack-query": "^2.16.3",
-        "@kubb/swagger-ts": "^2.16.3",
+        "@kubb/core": "^2.18.0",
+        "@kubb/swagger": "^2.18.0",
+        "@kubb/swagger-tanstack-query": "^2.18.0",
+        "@kubb/swagger-ts": "^2.18.0",
         "fast-glob": "^3.3.2",
         "tinyrainbow": "^1.1.1",
         "unplugin": "^1.10.1"
     },
     "devDependencies": {
-        "@types/node": "^20.12.8",
+        "@types/node": "^20.12.10",
         "@uneva/eslint": "^1.0.14",
         "bumpp": "^9.4.1",
         "eslint": "8.57.0",
