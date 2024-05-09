@@ -54,11 +54,6 @@
     "files": [
         "dist"
     ],
-    "workspaces": {
-        "packages": [
-            "playground/*"
-        ]
-    },
     "sideEffects": false,
     "scripts": {
         "esno": "esno",
