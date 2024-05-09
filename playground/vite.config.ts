@@ -1,8 +1,8 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import unpluginOpenapiGenTS from "unplugin-openapi-gen-ts/vite";
-import { definePlugin as createSwagger } from "@kubb/swagger";
-import { definePlugin as createSwaggerTS } from "@kubb/swagger-ts";
+import { pluginSwagger } from "@kubb/swagger";
+import { pluginTs } from "@kubb/swagger-ts";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -18,8 +18,8 @@ export default defineConfig({
                     clean: true,
                 },
                 plugins: [
-                    createSwagger({ output: false }),
-                    createSwaggerTS({ output: { path: "models" } }),
+                    pluginSwagger({ output: false }),
+                    pluginTs({ output: { path: "models" } }),
                 ],
             },
         }),
